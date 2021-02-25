@@ -10,8 +10,12 @@
  * @param {number[]} nums2
  * @return {number}
  */
+<<<<<<< HEAD
 //// process exited with signal SIGSEGV
 // !solve: Math.floor()
+=======
+// TODO: process exited with signal SIGSEGV
+>>>>>>> f87e8e242e1868ea13d5a4dccc0689ba3ebf3c52
 // return the Kth min number
 const getKth = (nums1, start1, end1, nums2, start2, end2, k) => {
     const len1 = end1 - start1 + 1;
