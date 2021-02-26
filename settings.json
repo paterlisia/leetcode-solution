@@ -29,3 +29,13 @@
 "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
 }
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "meta.function-call.generic.python",
+        "settings": {
+          "foreground": "#DCDCAA"
+        }
+      }
+    ]
+  },
