@@ -1,0 +1,31 @@
+// tab 大小为2个空格
+"editor.tabSize": 2,
+// 100 列后换行
+"editor.wordWrapColumn": 100,
+// 保存时格式化
+"editor.formatOnSave": true,
+// 开启 vscode 文件路径导航
+"breadcrumbs.enabled": true,
+// prettier 设置强制单引号
+"prettier.singleQuote": true,
+// prettier 设置语句末尾加分号
+"prettier.semi": false,
+// 选择 vue 文件中 template 的格式化工具
+"vetur.format.defaultFormatter.html": "prettier",
+// 显示 markdown 中英文切换时产生的特殊字符
+"editor.renderControlCharacters": true,
+// 让函数(名)和后面的括号之间加个空格
+"javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+// 让vue中的js按编辑器自带的ts格式进行格式化
+"vetur.format.defaultFormatter.js": "vscode-typescript",
+// vetur 的自定义设置
+"vetur.format.defaultFormatterOptions": {
+    "prettier": {
+        "singleQuote": true,
+        "semi": false
+    }
+},
+// Ctrl + Shift + F 快捷键设置（依照vetur格式化代码）
+"[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+}
