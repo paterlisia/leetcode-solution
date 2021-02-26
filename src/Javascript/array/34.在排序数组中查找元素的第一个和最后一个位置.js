@@ -20,6 +20,7 @@ var searchRange = function(nums, target) {
     return [leftIndex, rightIndex];
     return [-1, -1];
 };
+
 // normal binary search
 const binarySearch = (nums, target, lower) => {
     let left = 0, right = nums.length - 1, ans = nums.length;
