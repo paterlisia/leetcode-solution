@@ -10,7 +10,7 @@
  * @param {number} target
  * @return {number}
  */
-var threeSumClosest = function(nums, target) {
+var threeSumClosest = function (nums, target) {
     nums.sort();
     let ans = nums[0] + nums[1] + nums[2];
     const len = nums.length;
