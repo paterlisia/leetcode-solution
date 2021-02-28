@@ -22,6 +22,9 @@ class Solution {
             return;
         }
         for (int i = start; i < candidates.length; i++) {
+        if (i > start && candidates[i] == candidates[i - 1]) {
+            continue;
+        }
             if (candidates[i] > target) break;
             path.addLast(candidates[i]);
             dfs(candidates, target - candidates[i], i + 1, res, path);
