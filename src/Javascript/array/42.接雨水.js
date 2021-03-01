@@ -15,7 +15,9 @@ var trap = function(height) {
     let leftMax = 0, rightMax = 0;
     let left = 0, right = height.length - 1;
     while (left < right) {
+        // the min between leftMax and rightMax will be the height
         if (height[left] < height[right]) {
+            // update the max height of left side of i
             leftMax = Math.max(height[left], leftMax);
             ans += leftMax - height[left++];
         } else {
