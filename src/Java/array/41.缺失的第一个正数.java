@@ -9,7 +9,7 @@ class Solution {
     public int firstMissingPositive(int[] nums) {
         int len = nums.length;
         for (int i = 0; i < len; i++) {
-            // put the element to its value + 1 as index position
+            // put the element to its value - 1 as index position
             while (nums[i] > 0 && nums[i] <= len && nums[nums[i] - 1] != nums[i])
             swap(nums, nums[i] - 1, i);
         }
