@@ -17,21 +17,29 @@ class Solution(object):
         r = len(matrix[0]) - 1
         res = []
         count = len(matrix) * len(matrix[0])
-        num = 0
+        num = 1
         while num <= count:
             for i in range(l, r + 1):
+                if num > count:
+                    break
                 res.append(matrix[t][i])
                 num += 1
             t += 1
             for i in range(t, b + 1):
+                if num > count:
+                    break
                 res.append(matrix[i][r])
                 num += 1
             r -= 1
             for i in range(r, l - 1, -1):
+                if num > count:
+                    break
                 res.append(matrix[b][i])
                 num += 1
             b -= 1
             for i in range(b, t - 1, -1):
+                if num > count:
+                    break
                 res.append(matrix[i][l])
                 num += 1
             l += 1
