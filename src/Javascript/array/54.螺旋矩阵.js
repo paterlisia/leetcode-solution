@@ -12,7 +12,7 @@
 var spiralOrder = function(matrix) {
     let l = 0, t = 0, r = matrix[0].length - 1, b = matrix.length - 1;
     const res = [], count = matrix.length * matrix[0].length;
-    let num = 0;
+    let num = 1;
     while (num <= count) {
         for (let i = l; i <= r && num <= count; i++) {
             res.push(matrix[t][i]);
