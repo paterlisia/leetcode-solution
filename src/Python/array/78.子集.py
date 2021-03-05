@@ -11,5 +11,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
+        res = []
+        # dfs
+        def helper(start, path):
+            res.append(path)
+            for i in range(start, len(nums)):
+                helper(i + 1, path + [nums[i]])
+        helper(0, [])
+        return res
 # @lc code=end
 
