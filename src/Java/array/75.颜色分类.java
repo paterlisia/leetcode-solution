@@ -10,6 +10,7 @@ class Solution {
         int p0 = 0, p2 = nums.length - 1;
         // double pointer
         for (int i = 0; i <= p2; i++) {
+            // swap untill it does not equal to 2
             while (i <= p2 && nums[i] == 2) swap(nums, i , p2--);
             if (nums[i] == 0) swap(nums, i, p0++);
         }
