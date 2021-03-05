@@ -18,6 +18,7 @@ class Solution(object):
         for i in range(row):
             # set flag to represent if there is a 0 in the first column
             if matrix[i][0] == 0: col_flag0 = True
+            # ! start from 1 as first column is a guidance
             for j in range(1, col):
                 # set first col/row to zero if there is 0 in current col/row
                 if matrix[i][j] == 0: 
