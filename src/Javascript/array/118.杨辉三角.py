@@ -19,6 +19,7 @@ class Solution(object):
                     level.append(1)
                 else:
                     level.append(res[i - 1][j - 1] + res[i - 1][j])
+            res.append(level)
         return res
 # @lc code=end
 
