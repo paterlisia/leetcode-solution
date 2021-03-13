@@ -17,11 +17,11 @@ class Solution(object):
         :rtype: ListNode
         """
         if not lists: return None
-        self.merge(lists, 0, len(lists) - 1)
+        return self.merge(lists, 0, len(lists) - 1)
     def merge(self, lists, left, right):
         if left == right:
             return lists[left]
-        mid = left + (right - left) // 2
+        mid = (left + right) // 2
         l1 = self.merge(lists, left, mid)
         l2 = self.merge(lists, mid + 1, right)
         return self.mergeTwoLists(l1, l2)
