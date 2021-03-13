@@ -18,7 +18,7 @@
  */
 var mergeKLists = function(lists) {
     if (lists === null || lists.length === 0) return null;
-    merge(lists, 0, lists.length - 1);
+    return merge(lists, 0, lists.length - 1);
 };
 const merge = (lists, left, right) => {
     if (left === right) return lists[left];
