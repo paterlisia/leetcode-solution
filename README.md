@@ -64,4 +64,13 @@
     - [92.反转链表-ii](src/Java/Linked-List/92.反转链表-ii.java)
     - [141.环形链表](src/Java/Linked-List/141.环形链表.java)
     - [206.反转链表](src/Java/Linked-List/206.反转链表.java)
+- Tree
+    - [94.二叉树的中序遍历](src/Java/tree/94.二叉树的中序遍历.java)
+    - [95.不同的二叉搜索树-ii](src/Java/tree/95.不同的二叉搜索树-ii.java)
+    - [96.不同的二叉搜索树](src/Java/tree/96.不同的二叉搜索树.java)
+    - [98.验证二叉搜索树](src/Java/tree/98.验证二叉搜索树.java)
+    - [99.恢复二叉搜索树](src/Java/tree/99.恢复二叉搜索树.java)
+    - [100.相同的树](src/Java/tree/100.相同的树.java)
+    - [101.对称二叉树](src/Java/tree/101.对称二叉树.java)
+
 
