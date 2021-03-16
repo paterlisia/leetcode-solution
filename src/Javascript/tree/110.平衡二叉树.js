@@ -23,10 +23,10 @@ var isBalanced = function (root) {
 const dfs = (root) => {
     if (root === null) return 0;
     left = dfs(root.left);
-    if (left == -1) return -1;
+    if (left === -1) return -1;
     right = dfs(root.right);
-    if (right == -1) return -1;
-    return Math.abs(left - right) === -1 ? -1 : Math.max(left, right) + 1;
+    if (right === -1) return -1;
+    return Math.abs(left - right) < 2 ? Math.max(left, right) + 1 : -1;
 }
 // @lc code=end
 
