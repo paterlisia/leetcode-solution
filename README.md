@@ -81,5 +81,14 @@
     - [111.二叉树的最小深度.java](src/Java/tree/111.二叉树的最小深度.java)
     - [112.路径总和.java](src/Java/tree/112.路径总和.java)
     - [114.二叉树展开为链表.java](src/Java/tree/114.二叉树展开为链表.java)
+- Binary Search
+    - [29.两数相除.java](src/Java/binary-search/29.两数相除.java)
+    - [33.搜索旋转排序数组.java](src/Java/binary-search/33.搜索旋转排序数组.java)
+    - [34.在排序数组中查找元素的第一个和最后一个位置.java](src/Java/binary-search/34.在排序数组中查找元素的第一个和最后一个位置.java)
+    - [35.搜索插入位置.java](src/Java/binary-search/35.搜索插入位置.java)
+    - [50.pow-x-n.java](src/Java/binary-search/50.pow-x-n.java)
+    - [69.x-的平方根.java](src/Java/binary-search/69.x-的平方根.java)
+    - [74.搜索二维矩阵.java](src/Java/binary-search/74.搜索二维矩阵.java)
+    - [81.搜索旋转排序数组-ii.java](src/Java/binary-search/81.搜索旋转排序数组-ii.java)
 
 
