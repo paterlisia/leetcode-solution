@@ -17,6 +17,7 @@ class Solution {
                 if (Math.abs(sum - target) < Math.abs(closestSum - target)) {
                     closestSum = sum;
                 }
+                // the function of two pointers under ordered list
                 if (sum > target) right--;
                 else if (sum < target) left++;
                 else return closestSum;
