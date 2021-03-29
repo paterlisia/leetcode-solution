@@ -15,7 +15,7 @@ class Solution {
         int left = 1;
         while (left < height.length) {
             leftMax[left] = Math.max(leftMax[left - 1], height[left]);
-            maxTrap += Math.min(leftMax[left], rightMax[right]) - height[left++];
+            maxTrap += Math.min(leftMax[left], rightMax[left]) - height[left++];
         }
         return maxTrap;
     }
