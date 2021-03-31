@@ -13,7 +13,7 @@ class Solution {
     boolean k=(dividend>0&&divisor>0)||(dividend<0&&divisor<0);
     int result=0;
     dividend=-Math.abs(dividend);
-            divisor=-Math.abs(divisor);
+    divisor=-Math.abs(divisor);
     while(dividend<=divisor) {
         int temp=divisor;
         int c=1;
