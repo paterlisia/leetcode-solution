@@ -10,7 +10,7 @@ class Solution {
         boolean[][] judge = new boolean[s.length()][s.length()];
         List<List<String>> res = new ArrayList<List<String>>();
         for (int i = 0; i < s.length(); i++) {
-            Arrays.fill(judge[i], true);
+            Arrays.fill(judge[i], true); // ? why is the whole row
         }
         for (int i = s.length() - 1; i >= 0; i--) {
             for (int j = i + 1; j < s.length(); j++) {
