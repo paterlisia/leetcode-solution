@@ -21,16 +21,20 @@
  * }
  */
 class Solution {
-        List<Integer> res = new ArrayList<Integer>();
     public List<Integer> preorderTraversal(TreeNode root) {
-        recurr(root);
+        List<Integer> res = new ArrayList<Integer>();
+        if (root == null) return res;
+        Stack<TreeNode> s = new Stack<>();
+        while (!s.isEmpty() || root != null) {
+            while (root != null) {
+                res.add(root.val);
+                s.push(root);
+                root = root.left;
+            }
+            root = s.pop();
+            root = root.right;
+        }
         return res;
-    }
-    public void recurr(TreeNode root) {
-        if (root == null) return;
-        res.add(root.val);
-        preorderTraversal(root.left);
-        preorderTraversal(root.right);
     }
 }
 // @lc code=end
