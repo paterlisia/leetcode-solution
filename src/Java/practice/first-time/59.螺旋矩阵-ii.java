@@ -14,9 +14,9 @@ class Solution {
             top++;
             for (int i = top; i <= bottom && count >= num; i++) res[i][right] = num++;
             right--;
-            for (int i = right; i >= left && count >= num; i++) res[bottom][i] = num++;
+            for (int i = right; i >= left && count >= num; i--) res[bottom][i] = num++;
             bottom--;
-            for (int i = bottom; i >= top && count >= num; i++) res[i][left] = num++;
+            for (int i = bottom; i >= top && count >= num; i--) res[i][left] = num++;
             left++;
         }
         return res;
