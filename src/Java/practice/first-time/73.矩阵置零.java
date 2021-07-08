@@ -10,7 +10,7 @@ class Solution {
         boolean col0flag = false;
         for (int i = 0; i < matrix.length; i++) {
             if (matrix[i][0] == 0) col0flag = true;
-            for (int j = 0; j < matrix[0].length; j++) {
+            for (int j = 1; j < matrix[0].length; j++) {
                 if (matrix[i][j] == 0) matrix[0][j] = matrix[i][0] = 0;
             }
         }
