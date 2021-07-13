@@ -22,7 +22,6 @@ class Solution {
                     cols[i].put(value, cols[i].getOrDefault(value, 0) + 1);
                     rows[j].put(value, rows[j].getOrDefault(value, 0) + 1);
                     boxes[j / 3 + (i / 3) * 3].put(value, boxes[j / 3 + (i / 3) * 3].getOrDefault(value, 0) + 1);
-                
                 if (cols[i].get(value) > 1 || rows[j].get(value) > 1 || boxes[j / 3 + (i / 3) * 3].get(value) > 1) return false;
                 }
             }
