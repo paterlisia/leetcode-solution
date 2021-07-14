@@ -25,12 +25,12 @@ class Solution {
             cur = cur.next;
             len++;
         }
+        cur.next = head;
         for (int i = 0; i < len - k % len; i++) {
             pre = pre.next;
         }
         ListNode newHead = pre.next;
         pre.next = null;
-        cur.next = head;
         return newHead;
     }
 }
