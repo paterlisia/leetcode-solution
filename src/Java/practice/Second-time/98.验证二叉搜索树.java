@@ -22,7 +22,8 @@
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        int pre = Integer.MIN_VALUE;
+        if (root == null) return true;
+        long pre = Long.MIN_VALUE;
         Stack<TreeNode> s = new Stack<>();
         while (root != null || !s.isEmpty()) {
             while (root != null) {
