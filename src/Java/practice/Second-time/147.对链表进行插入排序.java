@@ -19,20 +19,18 @@ class Solution {
     public ListNode insertionSortList(ListNode head) {
         ListNode dummyHead = new ListNode(0);
         dummyHead.next = head;
-        ListNode lastSorted = head, curr = head.next;
-        while (curr != null) {
-            if (curr.val < lastSorted.val) {
+        ListNode lastSorted = head, cur = head.next;
+        while (cur != null) {
+            if (cur.val < lastSorted.val) {
                 ListNode pre = dummyHead;
-                while (curr.val > pre.next.val) {
-                    pre = pre.next;
-                }
-                lastSorted.next = curr.next;
-                curr.next = pre.next;
-                pre.next = curr;
+                while (pre.next.val < cur.val) pre = pre.next;
+                lastSorted.next = cur.next;
+                cur.next = pre.next;
+                pre.next = cur;
             } else {
                 lastSorted = lastSorted.next;
             }
-            curr = lastSorted.next;
+            cur = lastSorted.next;
         }
         return dummyHead.next;
     }
