@@ -26,8 +26,16 @@ class Node {
 */
 
 class Solution {
+    HashMap<Node, Node> map = new HashMap<>();
     public Node cloneGraph(Node node) {
-        
+        if (node == null) return null;
+        if (map.containsKey(node)) return map.get(node);
+        Node clonedNode = new Node(node.val);
+        map.put(node, clonedNode);
+        for (Node neighbor : node.neighbors) {
+            clonedNode.neighbors.add(cloneGraph(neighbor));
+        }
+        return clonedNode;
     }
 }
 // @lc code=end
