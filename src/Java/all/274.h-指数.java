@@ -7,6 +7,7 @@
 // @lc code=start
 class Solution {
     public int hIndex(int[] citations) {
+        int n = citations.length;
         int[] count = new int[n + 1];
         for (int c : citations) {
             if (c > n) count[n] += 1;
