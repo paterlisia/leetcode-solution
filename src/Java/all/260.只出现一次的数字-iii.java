@@ -9,11 +9,10 @@ class Solution {
     public int[] singleNumber(int[] nums) {
         int xor = 0;
         for (int num : nums) xor ^= num;
-        int diff = 1;
-        while (diff & xor != 0) diff <<= 1;
+        xor &= -xor;
         int a = 0, b = 0;
         for (int num : nums) {
-            if ((diff ^ num == 1)) a ^= num;
+            if ((xor & num) == 0) a ^= num;
             else b ^= num;
         }
         return new int[]{a, b};
