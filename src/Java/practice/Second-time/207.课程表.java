@@ -16,17 +16,17 @@ class Solution {
             requireCourses.get(require[1]).add(require[0]);
         }
         for (int i = 0; i < numCourses; i++) {
-            if (!dfs(numCourses, requireCourses, i, used)) return false;
+            if (!dfs(requireCourses, i, used)) return false;
         }
         return true;
     }
-    public boolean dfs(int numCourses, List<List<Integer>> requireCourses, int start, int[] used) {
+    public boolean dfs(List<List<Integer>> requireCourses, int start, int[] used) {
         if (used[start] == 1) return false;
         if (used[start] == -1) return true;
         List<Integer> currentRequire = requireCourses.get(start);
         used[start] = 1;
         for (Integer i : currentRequire) {
-            if (!dfs(numCourses, requireCourses, i, used)) return false;
+            if (!dfs(requireCourses, i, used)) return false;
         }
         used[start] = -1;
         return true;
