@@ -11,7 +11,7 @@ select Email  from
     select email, count(email) as num
     from Person p
     group by email
-) as Email
+)
 where num > 1;
 -- @lc code=end
 
